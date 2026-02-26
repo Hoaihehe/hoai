@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #fffaf0;
+            margin: 0;
+            padding: 20px;
+        }
+        .title {
+            text-align: center;
+            color: #c0392b;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #d4a017;
+            padding-bottom: 10px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        /* Style cho từng mục phong tục */
+        .tradition-card {
+            background: white;
+            border-left: 5px solid #c0392b;
+            margin-bottom: 20px;
+            padding: 15px 20px;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .tradition-card h3 {
+            margin-top: 0;
+            color: #d4a017;
+            display: flex;
+            align-items: center;
+        }
+        .tradition-card h3::before {
+            content: "🧧"; /* Biểu tượng bao lì xì */
+            margin-right: 10px;
+        }
+        .tradition-card p {
+            margin-bottom: 0;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2 class="title">Phong Tục Tập Quán Ngày Tết</h2>
+
+        <div class="tradition-card">
+            <h3>Cúng Ông Công, Ông Táo</h3>
+            <p>Diễn ra vào ngày 23 tháng Chạp, người dân thường chuẩn bị cá chép để tiễn các vị thần bếp về trời báo cáo việc gia đình trong năm qua.</p>
+        </div>
+
+        <div class="tradition-card">
+            <h3>Gói Bánh Chưng, Bánh Tét</h3>
+            <p>Đây là nét văn hóa đặc trưng, thể hiện sự sum vầy khi cả gia đình cùng ngồi quanh nồi bánh chưng đêm giao thừa.</p>
+        </div>
+
+
+        <div class="tradition-card">
+            <h3>Chúc Tết và Lì Xì</h3>
+            <p>Con cháu chúc thọ ông bà, cha mẹ và nhận những phong bao lì xì đỏ may mắn, tượng trưng cho lời chúc bình an và học hành tiến tới.</p>
+        </div>
+
+        <div class="tradition-card">
+            <h3>Hái Lộc Đầu Xuân</h3>
+            <p>Người dân thường đi chùa vào sáng mùng 1 để cầu may mắn, bình an cho gia đạo và hái một cành lộc nhỏ mang về.</p>
+        </div>
+    </div>
+
+</body>
+</html>

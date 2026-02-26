@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fffaf0;
+            margin: 0;
+            padding: 20px;
+        }
+        .gallery-title {
+            text-align: center;
+            color: #c0392b;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #d4a017;
+            display: inline-block;
+            width: 100%;
+            padding-bottom: 10px;
+        }
+        /* Bố cục lưới cho hình ảnh */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 10px;
+        }
+        .gallery-item {
+            background: white;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            border-color: #c0392b;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover; /* Giúp ảnh không bị méo */
+            border-radius: 4px;
+        }
+        .gallery-item p {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 class="gallery-title">Khoảnh Khắc Ngày Xuân Bính Ngọ</h2>
+
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="hoamai.JPG" alt="Hoa Mai Vàng">
+            <p>Hoa Mai Vàng Phú Quý</p>
+        </div>
+ 
+
+        <div class="gallery-item">
+            <img src="mualan.JPG" alt="Múa Lân">
+            <p>Rộn Ràng Múa Lân</p>
+        </div>
+    </div>
+
+</body>
+</html>
