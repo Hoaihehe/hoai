@@ -4,70 +4,64 @@
     <meta charset="UTF-8">
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
             background-color: #fffaf0;
-            margin: 0;
             padding: 20px;
+            margin: 0;
         }
-        .gallery-title {
-            text-align: center;
-            color: #c0392b;
-            text-transform: uppercase;
-            margin-bottom: 30px;
-            border-bottom: 2px solid #d4a017;
-            display: inline-block;
-            width: 100%;
-            padding-bottom: 10px;
-        }
-        /* Bố cục lưới cho hình ảnh */
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 10px;
+        .gallery-container {
+            max-width: 700px; /* Giới hạn độ rộng để xem trên máy tính không bị quá to */
+            margin: 0 auto;
         }
         .gallery-item {
             background: white;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-            text-align: center;
-        }
-        .gallery-item:hover {
-            transform: scale(1.05);
-            border-color: #c0392b;
+            margin-bottom: 30px; /* Khoảng cách giữa các ảnh */
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: 1px solid #d4a017;
         }
         .gallery-item img {
             width: 100%;
-            height: 200px;
-            object-fit: cover; /* Giúp ảnh không bị méo */
-            border-radius: 4px;
+            height: auto;
+            display: block;
         }
-        .gallery-item p {
-            margin-top: 10px;
-            font-weight: bold;
+        .caption {
+            padding: 15px;
+            text-align: center;
+        }
+        .caption h3 {
+            margin: 0 0 10px 0;
+            color: #c0392b;
+            font-size: 1.2rem;
+        }
+        .caption p {
+            margin: 0;
             color: #555;
+            font-size: 0.95rem;
+            line-height: 1.5;
         }
     </style>
 </head>
 <body>
 
-    <h2 class="gallery-title">Khoảnh Khắc Ngày Xuân Bính Ngọ</h2>
-
-    <div class="gallery-grid">
-        <div class="gallery-item">
-            <img src="hoamai.JPG" alt="Hoa Mai Vàng">
-            <p>Hoa Mai Vàng Phú Quý</p>
-        </div>
- 
-
-        <div class="gallery-item">
-            <img src="mualan.JPG" alt="Múa Lân">
-            <p>Rộn Ràng Múa Lân</p>
+<div class="gallery-container">
+    <div class="gallery-item">
+        <img src="hoamai.JPG" alt="Hoa Mai Vàng">
+        <div class="caption">
+            <h3>Hoa Mai Vàng Phú Quý</h3>
+            <p>Biểu tượng của sự may mắn, thịnh vượng và hạnh phúc trong ngày Tết miền Nam.</p>
         </div>
     </div>
+
+    <div class="gallery-item">
+        <img src="mualan.JPG" alt="Múa Lân">
+        <div class="caption">
+            <h3>Múa Lân Rộn Ràng</h3>
+            <p>Tiếng trống múa lân xua đuổi điều không may, mang lại không khí náo nhiệt và bình an cho mọi nhà.</p>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
